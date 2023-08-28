@@ -186,3 +186,32 @@ console.log(`${name} says ${says}`);
 }
 
 greetings("Sandeep",'Hello');
+
+
+
+// TypeScript Tutorial #12 - Classes
+class Invoice {
+    client: string;
+    details: string;
+    amount: number;
+
+    // to initialise use constructor otherwise it will give you one error
+    constructor(c:string, d:string, a:number){
+        this.client = c;
+        this.details = d;
+        this.amount =a;
+    }
+
+    // method
+    format(){
+        return `${this.client} owes ${this.amount} for ${this.details}`;
+    }
+}
+
+// now use construct initilise variable and obj will be made
+let inovoice1 = new Invoice("Mario", "goods", 10000);
+console.log(inovoice1);
+console.log(inovoice1.format());
+
+// array of invoices
+let arraysOFInvoices: Invoice[]=[]; // once Invoice object can be added

@@ -108,6 +108,18 @@ let ninjaTwo:{
 ninjaTwo = {name:'sandeep', age:30, skill:"runner"}
 
 
+// TypeScript Tutorial #6 - Dynamic (any) Types
+let humanAge : any;
+humanAge = 25; // number
+humanAge ='sandeep'; // string
+humanAge = {name:"sandeep"}; // object
+
+
+let mixedArrays :any[]=[]; // now add anything of anytype
+let mixedArrays2 :{
+    name:any,
+    age:any
+}; // only two specific variable with anytype
 
 
 

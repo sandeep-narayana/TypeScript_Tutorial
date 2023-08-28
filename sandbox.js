@@ -73,3 +73,10 @@ ninjaOn = { name: 'sandeep', age: 30, skill: "runner" };
 var ninjaTwo;
 //ninjaTwo = {name:'sandeep', age:30} // error
 ninjaTwo = { name: 'sandeep', age: 30, skill: "runner" };
+// TypeScript Tutorial #6 - Dynamic (any) Types
+var humanAge;
+humanAge = 25; // number
+humanAge = 'sandeep'; // string
+humanAge = { name: "sandeep" }; // object
+var mixedArrays = []; // now add anything of anytype
+var mixedArrays2; // only two specific variable with anytype

@@ -47,3 +47,4 @@ ninja.name = 'rohan'; // allowed as it is string
 // note : structure cant be changes once screated object.e no addition of variables nor deletion no type chnage 
 // jo karna hai inital obj me hi karo
 // Typestric is quite strict so we can get neet and clean code down the line
+//TypeScript Tutorial #5 - Explicit Types

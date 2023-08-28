@@ -68,3 +68,11 @@ ninja.name = 'rohan'// allowed as it is string
 // Typestric is quite strict so we can get neet and clean code down the line
 
 
+
+//TypeScript Tutorial #5 - Explicit Types
+
+
+
+
+
+

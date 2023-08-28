@@ -81,3 +81,37 @@ humanAge = 'sandeep'; // string
 humanAge = { name: "sandeep" }; // object
 let mixedArrays = []; // now add anything of anytype
 let mixedArrays2; // only two specific variable with anytype
+// TypeScript Tutorial #8 - Function Basics
+let greet = () => {
+    console.log("Hello");
+};
+let greets;
+greets = () => {
+    console.log("Hell");
+};
+greets = (a, b) => {
+    console.log(a + b);
+};
+greets(5, 10);
+// op[tional parameter]
+greets = (a, b, c) => {
+    console.log(a + b);
+    console.log(c);
+};
+// with default value if not gioven value
+greets = (a, b, c = 10) => {
+    console.log(a + b);
+    console.log(c);
+};
+//return type
+greets = (a, b, c) => {
+    return a + b;
+};
+//autometically ther return type is number
+let res = greets(10, 11);
+// res is of number type it refer the greets
+// explicit saying that it will return number
+greets = (a, b, c) => {
+    return a + b;
+};
+//  in case of console the return value is void

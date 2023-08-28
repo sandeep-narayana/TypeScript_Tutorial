@@ -121,3 +121,48 @@ let mixedArrays2 :{
     age:any
 }; // only two specific variable with anytype
 
+
+// TypeScript Tutorial #8 - Function Basics
+let greet = ()=>{
+console.log("Hello");
+}
+
+let greets:Function;
+greets=()=>{
+    console.log("Hell");
+}
+greets=(a:number, b:number)=>{
+    console.log(a+b);
+
+}
+
+greets(5,10);
+
+// op[tional parameter]
+greets=(a:number, b:number, c?:number)=>{
+    console.log(a+b);
+    console.log(c);
+}
+
+// with default value if not gioven value
+greets=(a:number, b:number, c:number|string = 10)=>{
+    console.log(a+b);
+    console.log(c);
+}
+
+//return type
+greets=(a:number, b:number, c?:number)=>{
+   return a+b;
+}
+
+//autometically ther return type is number
+let res = greets(10,11);
+// res is of number type it refer the greets
+
+// explicit saying that it will return number
+greets=(a:number, b:number, c?:number): number=>{
+    return a+b;
+ }
+
+//  in case of console the return value is void
+

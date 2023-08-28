@@ -166,3 +166,8 @@ greets=(a:number, b:number, c?:number): number=>{
 
 //  in case of console the return value is void
 
+
+
+// TypeScript Tutorial #9 Type Aliases
+type StringORNum = string|number;
+let myVariable:StringORNum;  //now it can be string or number

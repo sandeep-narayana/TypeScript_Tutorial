@@ -114,4 +114,4 @@ let res = greets(10, 11);
 greets = (a, b, c) => {
     return a + b;
 };
-//  in case of console the return value is void
+let myVariable; //now it can be string or number

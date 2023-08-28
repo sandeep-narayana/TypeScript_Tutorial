@@ -115,3 +115,14 @@ greets = (a, b, c) => {
     return a + b;
 };
 let myVariable; //now it can be string or number
+// TypeScript Tutorial #10 - Function Signatures
+// to spicify the type of function 
+//function with signature and retun type
+//let greetings:Function
+//with signature
+let greetings; // this is function dec with signature
+//use
+greetings = (name, says) => {
+    console.log(`${name} says ${says}`);
+};
+greetings("Sandeep", 'Hello');

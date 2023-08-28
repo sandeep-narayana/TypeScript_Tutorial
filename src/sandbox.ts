@@ -171,3 +171,18 @@ greets=(a:number, b:number, c?:number): number=>{
 // TypeScript Tutorial #9 Type Aliases
 type StringORNum = string|number;
 let myVariable:StringORNum;  //now it can be string or number
+
+// TypeScript Tutorial #10 - Function Signatures
+// to spicify the type of function 
+
+//function with signature and retun type
+//let greetings:Function
+
+//with signature
+let greetings:(a:string, b:string)=>void;  // this is function dec with signature
+//use
+greetings = (name:string,says:string)=>{
+console.log(`${name} says ${says}`);
+}
+
+greetings("Sandeep",'Hello');

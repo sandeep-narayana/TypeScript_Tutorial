@@ -145,3 +145,8 @@ console.log(inovoice1);
 console.log(inovoice1.format());
 // array of invoices
 let arraysOFInvoices = []; // once Invoice object can be added
+// TypeScript Tutorial #12 - Classes  
+//public  variables or methods   = can be acees by anybody
+//privete variables or methods  = we cant access from only inside the class through method from outside the class
+//readonly variables or methods = read but cant change it (matabla obj bante time ji assign hua vahi dikhega and change nahi hoga)
+//use chatgpt for more details

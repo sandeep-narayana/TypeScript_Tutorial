@@ -48,3 +48,28 @@ ninja.name = 'rohan'; // allowed as it is string
 // jo karna hai inital obj me hi karo
 // Typestric is quite strict so we can get neet and clean code down the line
 //TypeScript Tutorial #5 - Explicit Types
+////// explicit type
+//initilising the value with type so only a type can be assigned
+var character;
+character = 'sandeep';
+console.log(character);
+////// arrays
+//let managers: string[];
+//but we cannot use push method here so instead of this use this (console error)
+var managers = [];
+managers.push('sandeep');
+/////union types (to make mi array)
+var mixedArray = [];
+mixedArray.push(1); //will work
+mixedArray.push('sandeep'); // will work
+//mixedArray.push(false) // compile error
+//for variable
+var HumanName; // no need to use paranthesis
+///// objects
+//how to declare a pre-intialised object 
+var ninjaOn;
+ninjaOn = { name: 'sandeep', age: 30 };
+ninjaOn = { name: 'sandeep', age: 30, skill: "runner" };
+var ninjaTwo;
+//ninjaTwo = {name:'sandeep', age:30} // error
+ninjaTwo = { name: 'sandeep', age: 30, skill: "runner" };

@@ -70,7 +70,42 @@ ninja.name = 'rohan'// allowed as it is string
 
 
 //TypeScript Tutorial #5 - Explicit Types
+////// explicit type
+//initilising the value with type so only a type can be assigned
+let character:string;
+character = 'sandeep'
+console.log(character);
 
+
+////// arrays
+//let managers: string[];
+//but we cannot use push method here so instead of this use this (console error)
+let managers: string[] = [];
+managers.push('sandeep');
+/////union types (to make mi array)
+let mixedArray: (string|number)[]=[];
+mixedArray.push(1) //will work
+mixedArray.push('sandeep') // will work
+//mixedArray.push(false) // compile error
+
+//for variable
+let HumanName:string|number; // no need to use paranthesis
+
+
+///// objects
+//how to declare a pre-intialised object 
+let ninjaOn:object;
+ninjaOn = {name:'sandeep', age:30}
+ninjaOn = {name:'sandeep', age:30, skill:"runner"}
+
+let ninjaTwo:{
+    name:string,
+    age:number,
+    skill:string
+}
+//ninjaTwo = {name:'sandeep', age:30} // error
+
+ninjaTwo = {name:'sandeep', age:30, skill:"runner"}
 
 
 
